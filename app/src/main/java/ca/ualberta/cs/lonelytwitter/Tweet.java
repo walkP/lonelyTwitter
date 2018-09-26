@@ -40,4 +40,9 @@ public abstract class Tweet implements Tweetable{
     public abstract Boolean isImportant();
 
     ArrayList<Mood> moods = new ArrayList<Mood>();
+
+    public String toString(){
+
+        return date.toString() + " | " + message;
+    }
 }
